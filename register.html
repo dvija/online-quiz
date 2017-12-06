@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>Registationtion form:</title>
+<script type="text/javascript">
+
+function check()
+{
+var o1=document.getElementById("name").value;
+var o2=document.getElementById("pwd").value;
+var o3=document.getElementById("cpwd").value;
+var o4=document.getElementById("id").value;
+var o5=document.getElementById("phone").value;
+
+if(o1==""||o2==""||o3==""||o4==""||o5=="")
+{alert("please enter all value");
+ return false;
+}
+else if(o2!=o3)
+{alert("password is not same");
+return false;
+}
+else if(o2.length<6||o2.length>8)
+{alert("pwd between 6-8");
+return false;
+}
+else
+alert("login successfull");
+return true;
+
+}
+</script>
+</head>
+
+<body>
+<form name="form1" action="registeruser.php" method="post" onsubmit="return check();">
+<body bgcolor=1007601070><center>
+<font size=6><p align="center"><font color="cyan"><b>Registration Form</b></font></font size>
+
+</br></br.></br></br></br><font color="red"><h3>(please remember the id & password for login further)
+
+<table>
+<tr>
+<td><font color=yellow>
+Enter  name:
+</td><td>
+  <input type="text" name="name"size=30/>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<font color=yellow>gender:
+</td><td><input type="radio"name="gender"value="male"><font color=red>male
+<input type="radio"name="gender"value="female"><font color=red>female
+
+</td>
+</tr>
+<tr>
+<td><font color=yellow>
+phone no:
+  </td><td><input type="text" name="phone"size=30/>
+
+</td>
+</tr>
+<tr>
+<td>
+<font color=yellow>Enter  id  :
+  </td><td><input type="text" name="id"size=30/>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<font color=yellow>password:
+</td><td><input type="password" name="pwd" size=30/>
+</td>
+</tr>
+<tr>
+<td><font color=yellow>Confirm Password:</td>
+<td><input type="password" name="cpwd" size=30/></td>
+</tr>
+</table>
+</br>
+</br>
+<input type="submit"value="submit"/>
+<input type="reset"/>
+<br>
+
+
+
+<br/>
+</p>
+</body>
+</html>
+
+
+

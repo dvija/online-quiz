@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>link</title>
+<script type="text/javascript">
+
+function check()
+{
+var o1=document.getElementById("id").value;
+var o2=document.getElementById("pwd").value;
+
+if(o1==""||o2=="")
+{alert("please enter all value");
+ return false;
+}
+
+else
+return true;
+
+}
+</script>
+</head>
+<body bgcolor="1007601070">
+<center><b><h2>
+<font color="red">This is use only by admin. . . . . .
+<form name="f1" action="verify1.php " method="post" onsubmit="return check();">
+<br/>
+<br/><br/>
+<table>
+<tr>
+<td> <font color="yellow"><b>
+Enter id  :
+</td>
+<td><input type="text" name="id" >
+</td>
+</tr>
+<tr>
+<td><font color=yellow><b>
+Enter password :
+</td>
+<td><input type="password" name="pwd">
+</td>
+
+</tr>
+</table>
+<input type="submit" value="log in">
+<br/>
+<br/>
+<br/>
+
+</center>
+</body>
+</html>
+
